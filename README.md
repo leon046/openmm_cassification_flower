@@ -130,3 +130,9 @@ tulip/NAME**.jpg 4
 ## 4、最后训练结果
 2023-02-06 01:47:58,577 - mmcls - INFO - Saving checkpoint at 100 epochs
 [>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 569/569, 39.1 task/s, elapsed: 15s, ETA:     0s2023-02-06 01:48:18,093 - mmcls - INFO - Epoch(val) [100][36]       accuracy_top-1: 92.4429, accuracy_top-5: 100.0000
+## 5、验证模型
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 287/287, 36.1 task/s, elapsed: 8s, ETA:     0s
+accuracy : 91.29
+(base) root@sdjs:~/mmclassification# python tools/test.py work_dirs/convnext-large_64xb64_in1k_job2/config.py work_dirs/convnext-large_64xb64_in1k_job2/latest.pth --metrics=accuracy --metric-options=topk=1
+
