@@ -1,4 +1,6 @@
 # openmm_cassification_flower 任务介绍
+训练环境配置可以参考
+https://blog.csdn.net/qq_39435411/article/details/125303704
 使用 MMClassification 训练花卉图片分类模型。
 
 学习使用 MMClassification 的文档以及教学视频，整理训练数据集，修改配置文件，基于 MMClassification 提供的预训练模型，在 flowers 数据集上完成分类模型的微调训练。
